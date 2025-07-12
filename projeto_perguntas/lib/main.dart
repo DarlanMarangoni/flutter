@@ -23,12 +23,10 @@ class _PerguntaAppState extends State<PerguntaApp> {
         'respostas': ['Maria', 'Joao', 'Leo', 'Pedro'],
       },
     ];
-    List<Widget> respostas = [];
-    for (var item
-        in perguntas.elementAt(_perguntaSelecionada)['respostas']
-            as List<String>) {
-      respostas.add(Resposta(item, _responder));
-    }
+    final List<Widget> respostas =
+        (perguntas.elementAt(_perguntaSelecionada)['respostas'] as List<String>)
+            .map((item) => Resposta(item, _responder))
+            .toList();
 
     return MaterialApp(
       home: Scaffold(
