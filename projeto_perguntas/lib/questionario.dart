@@ -17,8 +17,8 @@ class Questionario extends StatelessWidget {
   Widget build(BuildContext context) {
     final List<Widget> respostas = temPerguntaSelecionada
         ? (perguntas.elementAt(perguntaSelecionada)['respostas']
-                  as List<String>)
-              .map((item) => Resposta(item, quandoResponder))
+                  as List<Map<String, Object>>)
+              .map((item) => Resposta(item['texto'] as String, quandoResponder))
               .toList()
         : [];
 
