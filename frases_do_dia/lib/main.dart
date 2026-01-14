@@ -11,7 +11,7 @@ class MainApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: "Frases do Dia",
-      home: Container(color: Colors.white),
+      home: Column(children: [Text("Texto 1"), Text(" Texto 2")]),
     );
   }
 }
