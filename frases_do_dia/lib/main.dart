@@ -12,23 +12,17 @@ class MainApp extends StatelessWidget {
     return MaterialApp(
       title: "Frases do Dia",
       home: Container(
-        padding: EdgeInsets.all(100),
-        color: Colors.white,
+        padding: EdgeInsets.fromLTRB(10, 30, 10, 0),
+        margin: EdgeInsets.all(30),
+        decoration: BoxDecoration(
+          border: Border.all(width: 3, color: Colors.white),
+          borderRadius: BorderRadius.circular(12),
+        ),
         child: Column(
           children: [
-            TextButton(
-              onPressed: () {
-                print("Botão pressionado");
-              },
-              child: Text(
-                "Botão",
-                style: TextStyle(
-                  fontSize: 20,
-                  color: Colors.black,
-                  decoration: TextDecoration.none,
-                ),
-              ),
-            ),
+            Text("t1"),
+            Padding(padding: EdgeInsets.all(30), child: Text("t2")),
+            Text("t3"),
           ],
         ),
       ),
