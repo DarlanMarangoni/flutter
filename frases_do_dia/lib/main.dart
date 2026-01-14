@@ -12,21 +12,21 @@ class MainApp extends StatelessWidget {
     return MaterialApp(
       title: "Frases do Dia",
       home: Container(
+        padding: EdgeInsets.all(100),
         color: Colors.white,
         child: Column(
           children: [
-            Text(
-              "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-              style: TextStyle(
-                fontSize: 35,
-                fontStyle: FontStyle.italic,
-                fontWeight: FontWeight.normal,
-                color: Colors.black,
-                letterSpacing: 0,
-                wordSpacing: 0,
-                decoration: TextDecoration.underline,
-                decorationColor: Colors.greenAccent,
-                decorationStyle: TextDecorationStyle.dotted,
+            TextButton(
+              onPressed: () {
+                print("Botão pressionado");
+              },
+              child: Text(
+                "Botão",
+                style: TextStyle(
+                  fontSize: 20,
+                  color: Colors.black,
+                  decoration: TextDecoration.none,
+                ),
               ),
             ),
           ],
