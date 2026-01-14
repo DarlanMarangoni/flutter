@@ -11,7 +11,27 @@ class MainApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: "Frases do Dia",
-      home: Row(children: [Text("Texto 1"), Text(" Texto 2")]),
+      home: Container(
+        color: Colors.white,
+        child: Column(
+          children: [
+            Text(
+              "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+              style: TextStyle(
+                fontSize: 35,
+                fontStyle: FontStyle.italic,
+                fontWeight: FontWeight.normal,
+                color: Colors.black,
+                letterSpacing: 0,
+                wordSpacing: 0,
+                decoration: TextDecoration.underline,
+                decorationColor: Colors.greenAccent,
+                decorationStyle: TextDecorationStyle.dotted,
+              ),
+            ),
+          ],
+        ),
+      ),
     );
   }
 }
