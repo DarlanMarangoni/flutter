@@ -17,11 +17,7 @@ class MainApp extends StatelessWidget {
           border: Border.all(width: 3, color: Colors.white),
           borderRadius: BorderRadius.circular(12),
         ),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: [Text("t1"), Text("t2"), Text("t3")],
-        ),
+        child: Image.asset("images/mesa.jpg", fit: BoxFit.contain),
       ),
     );
   }
